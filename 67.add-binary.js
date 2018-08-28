@@ -42,4 +42,4 @@ const addBinary1 = function(a, b) {
 };
 
 
-console.log(addBinary1('1011', '1010'))
+console.log(addBinary1('1011', '1010'));
