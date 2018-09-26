@@ -44,10 +44,33 @@ function logListNodeFormat(head, format) {
     console.log(str.slice(0, str.length -(format.length)));
 }
 
+function TreeNode(val) {
+
+    return {
+        val: val,
+        left: null,
+        right: null
+    }
+}
+
+function createTree(array) {
+
+    let root = TreeNode()
+
+    while(array.length) {
+
+
+
+    }
+
+}
+
 module.exports = {
 
     ListNode: ListNode,
     createListNodesByArray: createListNodesByArray,
     logListNode: logListNode,
-    logListNodeFormat:logListNodeFormat
+    logListNodeFormat:logListNodeFormat,
+
+    createTree
 };
