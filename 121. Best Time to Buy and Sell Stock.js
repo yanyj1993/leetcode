@@ -1,3 +1,6 @@
+/*
+* 解题思路：
+* */
 /**
  * @param {number[]} prices
  * @return {number}
