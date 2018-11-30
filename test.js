@@ -1,27 +1,19 @@
 /**
- * @param {number} n
- * @return {number}
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {void} Do not return anything, modify nums in-place instead.
  */
-var trailingZeroes = function(n) {
+var rotate = function(nums, k) {
 
-    let count = 0;
-    let y = 0;
-    while (n > 0) {
+    k = k % nums.length;
 
-        if(n % 5 === 0) {
-            count ++;
-            y = parseInt(n / 5);
-            while (y % 5 === 0) {
-                y = parseInt(y / 5);
-                count ++;
-            }
+    let spli = nums.splice(0, nums.length - k);
 
-        }
-        n --;
-    }
+    spli.forEach(function (v) {
+        nums[k++] = v;
+    })
+}
+var nums = [1,2,3,4,5,6,7];
 
-    return count;
-};
-
-
-console.log(trailingZeroes(50));
+rotate([1,2,3,4,5,6,7], 3);
+console.log(nums);
