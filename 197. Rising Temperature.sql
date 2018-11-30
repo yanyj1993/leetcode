@@ -1,0 +1,1 @@
+select w1.id from Weather w1, Weather w2 where w1.id = (w2.id - 1)
