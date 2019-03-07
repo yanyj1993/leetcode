@@ -13,4 +13,4 @@ const lengthOfLastWord = function(s) {
     return length;
 };
 
-console.log(lengthOfLastWord(' '))
+console.log(lengthOfLastWord(' '));
